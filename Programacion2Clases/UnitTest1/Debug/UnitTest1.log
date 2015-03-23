@@ -1,0 +1,65 @@
+﻿Build started 23/03/2015 19:59:25.
+     1>Project "C:\Users\Ivan\Documents\GitHub\P2Pruebas\Programacion2Clases\UnitTest1\UnitTest1.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         F:\visualStudio2013\VC\bin\CL.exe /c /IF:\visualStudio2013\VC\UnitTest\include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\UnitTest1.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /FC /errorReport:prompt unittest1.cpp
+         unittest1.cpp
+     1>c:\users\ivan\documents\github\p2pruebas\programacion2clases\programacion2clases\p2list.h(74): error C2512: 'p2ListItem<tdata>' : no appropriate default constructor available
+                 with
+                 [
+                     tdata=int
+                 ]
+                 c:\users\ivan\documents\github\p2pruebas\programacion2clases\programacion2clases\p2list.h(73) : while compiling class template member function 'unsigned int P2List<int>::add(const tdata &)'
+                 with
+                 [
+                     tdata=int
+                 ]
+                 c:\users\ivan\documents\github\p2pruebas\programacion2clases\unittest1\unittest1.cpp(233) : see reference to function template instantiation 'unsigned int P2List<int>::add(const tdata &)' being compiled
+                 with
+                 [
+                     tdata=int
+                 ]
+                 c:\users\ivan\documents\github\p2pruebas\programacion2clases\unittest1\unittest1.cpp(232) : see reference to class template instantiation 'P2List<int>' being compiled
+     1>c:\users\ivan\documents\github\p2pruebas\programacion2clases\programacion2clases\p2list.h(75): error C2679: binary '=' : no operator found which takes a right-hand operand of type 'p2ListItem<tdata> *' (or there is no acceptable conversion)
+                 with
+                 [
+                     tdata=int
+                 ]
+                 c:\users\ivan\documents\github\p2pruebas\programacion2clases\programacion2clases\p2list.h(24): could be 'p2ListItem<tdata> &p2ListItem<tdata>::operator =(const p2ListItem<tdata> &)'
+                 with
+                 [
+                     tdata=int
+                 ]
+                 while trying to match the argument list '(p2ListItem<tdata>, p2ListItem<tdata> *)'
+                 with
+                 [
+                     tdata=int
+                 ]
+     1>c:\users\ivan\documents\github\p2pruebas\programacion2clases\programacion2clases\p2list.h(78): error C2440: '=' : cannot convert from 'p2ListItem<tdata>' to 'p2ListItem<tdata> *'
+                 with
+                 [
+                     tdata=int
+                 ]
+                 No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+     1>c:\users\ivan\documents\github\p2pruebas\programacion2clases\programacion2clases\p2list.h(82): error C2819: type 'p2ListItem<tdata>' does not have an overloaded member 'operator ->'
+                 with
+                 [
+                     tdata=int
+                 ]
+                 did you intend to use '.' instead?
+     1>c:\users\ivan\documents\github\p2pruebas\programacion2clases\programacion2clases\p2list.h(82): error C2232: '->p2ListItem<tdata>::prev' : left operand has 'struct' type, use '.'
+                 with
+                 [
+                     tdata=int
+                 ]
+     1>c:\users\ivan\documents\github\p2pruebas\programacion2clases\programacion2clases\p2list.h(83): error C2065: 'pdataitem' : undeclared identifier
+     1>c:\users\ivan\documents\github\p2pruebas\programacion2clases\programacion2clases\p2list.h(84): error C2440: '=' : cannot convert from 'p2ListItem<tdata>' to 'p2ListItem<tdata> *'
+                 with
+                 [
+                     tdata=int
+                 ]
+                 No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+     1>Done Building Project "C:\Users\Ivan\Documents\GitHub\P2Pruebas\Programacion2Clases\UnitTest1\UnitTest1.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.21
